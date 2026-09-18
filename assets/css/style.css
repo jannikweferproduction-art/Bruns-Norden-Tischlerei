@@ -427,6 +427,23 @@ section {
   font-weight: 800;
 }
 
+/* "TISCHLEREI BRUNS NORDEN" ist länger als der alte Zwei-Wort-Schriftzug;
+   auf sehr schmalen Screens braucht die Marke etwas weniger Platz. */
+@media (max-width: 400px) {
+  .brand {
+    gap: 0.4rem;
+  }
+
+  .brand-mark {
+    width: 26px;
+    height: 26px;
+  }
+
+  .brand-word {
+    font-size: 0.82rem;
+  }
+}
+
 .main-nav {
   display: none;
 }

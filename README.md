@@ -1,6 +1,6 @@
-# Tischlerei Bruns – Website
+# Tischlerei Bruns Norden: Website
 
-Statische Website (HTML/CSS/JS, ohne Framework und ohne Build-Schritt) für die Tischlerei Bruns in Norden. Enthält Startseite, Leistungen, Über uns, Referenzen, Kontakt sowie Impressum und Datenschutz.
+Statische Website (HTML/CSS/JS, ohne Framework und ohne Build-Schritt) für die Tischlerei Bruns Norden. Enthält Startseite, Leistungen, Über uns, Referenzen, Kontakt sowie Impressum und Datenschutz.
 
 ## Projektstruktur
 
