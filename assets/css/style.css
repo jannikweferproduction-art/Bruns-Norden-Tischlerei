@@ -1305,6 +1305,37 @@ fieldset legend {
   max-width: 60ch;
 }
 
+/* Dezente Holz-Bildleiste als Kopfbereich auf den kundenrelevanten Unterseiten.
+   Bewusst flach (Höhe bleibt wie beim einfachen .page-header, padding-gesteuert,
+   nicht so hoch wie die Hero-Sektion). Überschrift/Text bleiben dunkel, da der
+   helle Verlauf links fast deckend ist. */
+.page-header.page-header--photo {
+  position: relative;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(250, 246, 240, 0.97) 0%,
+      rgba(250, 246, 240, 0.88) 52%,
+      rgba(250, 246, 240, 0.48) 100%
+    ),
+    url("../img/seitenkopf-holz.webp") center / cover no-repeat;
+}
+
+@media (max-width: 779px) {
+  /* Schmalere Crops zeigen bei "center" zu wenig vom Holzbereich rechts;
+     Bildausschnitt auf Mobilgeräten weiter nach rechts verschieben. */
+  .page-header.page-header--photo {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(250, 246, 240, 0.97) 0%,
+        rgba(250, 246, 240, 0.9) 60%,
+        rgba(250, 246, 240, 0.55) 100%
+      ),
+      url("../img/seitenkopf-holz.webp") 78% center / cover no-repeat;
+  }
+}
+
 .breadcrumb {
   font-size: 0.85rem;
   color: var(--color-charcoal-2);
